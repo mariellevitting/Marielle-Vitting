@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+#hiof {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    font-weight: 800;
+}
+
+#user {
+    right: 10%;
+    top: 0%;
+    position: absolute;
+}
+
+hr {
+    border-top: 1px solid black;
+}
+
+
+/*Grid*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    align-items: center;
+}
+
+
+/*Header*/
+
+header {
+    grid-area: header;
+    margin-top: 10px;
+    font-family: 'Permanent Marker', cursive;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 5px 5px 0px 0px;
+    background-size: 100%;
+}
+
+main {
+    grid-area: main;
+    line-height: 25px;
+}
+
+.grid-item {
+    /*display: flex;*/
+    padding: 1rem;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px grey;
+}
+
+section {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    border-radius: 2.5px;
+    margin-bottom: 20px;
+    padding: 2%;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: #6ad2b3;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+
+.button {
+    width: 70px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: #6ad2b3;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        align-items: center;
+    }
+}
